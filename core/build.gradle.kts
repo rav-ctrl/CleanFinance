@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -31,5 +31,5 @@ android {
 }
 
 dependencies {
-    // Core module dependencies will be added later
+    // Core module dependencies will be added as needed
 } 
