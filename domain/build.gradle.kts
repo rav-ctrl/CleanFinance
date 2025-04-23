@@ -1,19 +1,14 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
-    namespace = "com.rav.cleanfinance"
+    namespace = "com.rav.cleanfinance.domain"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rav.cleanfinance"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -36,8 +31,5 @@ android {
 }
 
 dependencies {
-    implementation(project(":core"))
-    implementation(project(":domain"))
-    implementation(project(":data"))
-    implementation(project(":feature:transactions"))
-}
+    // Domain module dependencies will be added later
+} 
