@@ -4,6 +4,9 @@ buildscript {
         google()
         mavenCentral()
     }
+    dependencies {
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.50")
+    }
 }
 
 plugins {
@@ -11,6 +14,7 @@ plugins {
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.kapt) apply false
+    alias(libs.plugins.hilt.android) apply false
 }
 
 tasks.register("clean", Delete::class) {
