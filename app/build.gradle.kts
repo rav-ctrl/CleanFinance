@@ -40,4 +40,7 @@ dependencies {
     implementation(project(":domain"))
     implementation(project(":data"))
     implementation(project(":feature:transactions"))
+    
+    // Material Design
+    implementation(libs.material)
 }
